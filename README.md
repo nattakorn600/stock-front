@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Stock Management System – Front-end
 
-## Getting Started
+Front-end ของระบบจัดการสินค้าและสต็อก  
+พัฒนาด้วย **Next.js Framework** เพื่อเชื่อมต่อกับ Back-end API  
+รองรับการแสดงผลข้อมูลสินค้า การจัดการสต็อก และการอัปเดตข้อมูลแบบ Real-time
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📌 Features
+- แสดงรายการสินค้า (Products)
+- แสดงและจัดการจำนวนสินค้าคงเหลือ (Stock)
+- เพิ่ม / แก้ไข / ลบ ข้อมูลสินค้า
+- เชื่อมต่อ Back-end API
+- UI แยกส่วนชัดเจน ใช้งานง่าย
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🖥️ User Interface (UI)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 📦 Product Management
+หน้าจอสำหรับจัดการข้อมูลสินค้า  
+- แสดงชื่อสินค้า
+- ราคาต่อหน่วย
+- ปุ่มเพิ่มลงตะกร้า
 
-## Learn More
+![Product Page](https://github.com/user-attachments/assets/9b9cd3b2-7ec9-4adc-a45b-b78a7ebd5cb5)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 📊 Stock Management
+หน้าจอสำหรับจัดการจำนวนสินค้าคงเหลือ  
+- แสดงจำนวน Stock ตามสินค้า
+- อัปเดตจำนวนสินค้าแบบทันที
+- เชื่อมโยงกับข้อมูลสินค้า
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+![Stock Page](https://github.com/user-attachments/assets/ce1a36cb-6c35-4892-8bb4-28b0d8c51a21)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🧱 Front-end Architecture
+- เรียกใช้งาน Back-end ผ่าน REST API
+- จัดการ State และข้อมูลจาก API
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Technology Stack**
+- Next.js
+- TypeScript
+  Fetch API
+- Tailwind
+
+---
+
+## 🔗 API Integration
+Front-end เชื่อมต่อกับ Back-end ผ่าน API เช่น
+
+- `GET /api/products`
+- `POST /api/products`
+- `PUT /api/products/{id}`
+- `DELETE /api/products/{id}`
+
+- `GET /api/stock`
+- `POST /api/stock`
+- `PUT /api/stock/{id}`
+- `DELETE /api/stock/{id}`
+
+---
